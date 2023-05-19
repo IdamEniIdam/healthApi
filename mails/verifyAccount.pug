@@ -1,0 +1,26 @@
+extends baseEmail
+
+block content
+  .bg
+    img(src='https://res.cloudinary.com/idameniidam/image/upload/v1662565624/1662594480081.jpg'  alt='logo')
+  p Hi #{name},
+  p Thank you for signing up with us Health, we're glad to have you.
+
+  p Please verify your account by providing the token you have received. 
+  
+  //- table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+  //-   tbody
+  //-     tr
+  //-       td(align='left')
+  //-         table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+  //-           tbody
+  //-             tr
+  //-               td
+  //-                 a(href=`${url}`, target='_blank') Verify Your Account
+  //- p You can also copy the url and paste in your browser.
+  p Your Activation token is
+  .titleNew 
+    p #{url}
+
+  
+  p SafeX
